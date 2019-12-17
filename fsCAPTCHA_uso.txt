@@ -1,0 +1,21 @@
+Parametros:
+
+_cMsg (C 80) => texto exibido ao usuario
+
+Retorno
+
+_lRet (BOLEANO) = .T. para confirmação correta
+                  .F. clicou no X
+
+// -----------------------
+// Exemplo de uso
+// -----------------------
+
+
+Local _lContinua := .f.
+
+while !_lContinua
+	_lContinua := u_fsCAPTCHA("Após confirmar, não será possivel voltar e alterar os dados cadastrados!")
+end
+
+
